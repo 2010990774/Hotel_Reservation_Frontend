@@ -42,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },"proxy":"http://localhost:8800/api"
+  },
+  "proxy": "http://localhost:8800/api",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "predeploy" : "npm run build",
+"deploy" : "gh-pages -d build"
 }
